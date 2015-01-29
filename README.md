@@ -40,6 +40,11 @@ rvm1_install_path: '/usr/local/rvm'
 #       make sure you ADD the --user-install flag below
 rvm1_install_flags: '--auto-dotfiles'
 
+# NOTE: When adding a flag, make sure its compatible with
+# the rubies you have listed.
+#           --with-jemalloc is only for ruby 2.2+
+rvm1_ruby_install_flags:
+
 # Set the owner for the rvm directory
 rvm1_user: 'root'
 
